@@ -1,6 +1,6 @@
 import React from 'react';
 
-function DeleteButton() {
+function Button() {
 
   return (
     <>
@@ -11,4 +11,4 @@ function DeleteButton() {
   )
 }
 
-export default DeleteButton
+export default Button
