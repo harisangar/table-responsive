@@ -1,14 +1,24 @@
 
-import './App.css';
-import Table from './components/Table';
-
+import {Route,Routes} from "react-router-dom";
+import Userpage from "./components/Userpage";
+import Employeepage from "./components/Employeepage";
+import Homepage from "./components/Homepage";
+import Navbar from "./components/Navbar";
 function App() {
+  
   return (
-    <div className="App">
-      <Table />
+    <>
+    <Navbar/>
+    <Routes>
+    <Route exact path="/" element={<Homepage/>}/>
+      <Route exact path="/user" element={<Userpage/>}/>
+      <Route exact path="/employee" element={<Employeepage/>}/>
+      
      
-    </div>
+     </Routes>
+     
+    
+    </>
   );
 }
-
 export default App;
